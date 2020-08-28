@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: GridView.builder(gridDelegate: null, itemBuilder: null),
+      body: SafeArea(child: null),
     );
   }
 }
