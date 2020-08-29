@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ch9_gridview_builder_flutter/widgets/gridview_builder.dart';
 
 class Home extends StatefulWidget {
   const Home({Key key, @required this.title}) : super(key: key);
@@ -15,7 +16,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: SafeArea(child: null),
+      body: SafeArea(child: GridViewBuilderWidget()),
     );
   }
 }
